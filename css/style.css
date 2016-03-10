@@ -1,0 +1,308 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-orange-tick {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px 0px;
+  width: 18px;
+  height: 17px;
+}
+
+/*Importing fonts*/
+@font-face {
+  font-family: "SSSB";
+  src: url("../fonts/sourcesanspro-semibold-webfont.eot");
+  src: url("../fonts/sourcesanspro-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-semibold-webfont.woff") format("woff"), url("../fonts/sourcesanspro-semibold-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-semibold-webfont.svg#$font-file") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SSR";
+  src: url("../fonts/sourcesanspro-regular-webfont.eot");
+  src: url("../fonts/sourcesanspro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-regular-webfont.woff") format("woff"), url("../fonts/sourcesanspro-regular-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-regular-webfont.svg#$font-file") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SSL";
+  src: url("../fonts/sourcesanspro-light-webfont.eot");
+  src: url("../fonts/sourcesanspro-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-light-webfont.woff") format("woff"), url("../fonts/sourcesanspro-light-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-light-webfont.svg#$font-file") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SSB";
+  src: url("../fonts/sourcesanspro-bold-webfont.eot");
+  src: url("../fonts/sourcesanspro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-bold-webfont.woff") format("woff"), url("../fonts/sourcesanspro-bold-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-bold-webfont.svg#$font-file") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body,
+html {
+  font-family: SSR;
+  width: 100%;
+  height: 100%;
+}
+header.top {
+  padding-top: 130px;
+  padding-bottom: 134px;
+  color: #fff;
+  min-height: 400px;
+  background: url("../img/hero.jpg") no-repeat top center rgba(204,204,204,0.8);
+}
+@media only screen and (max-width: 480px) {
+  header.top {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  header.top br {
+    display: none;
+  }
+}
+header.top .logo {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 87px;
+  text-align: center;
+}
+header.top .logo img {
+  display: inline-block;
+  vertical-align: middle;
+}
+header.top h1 {
+  text-align: center;
+  font-family: SSB;
+  font-size: 4.17em;
+  line-height: 115%;
+}
+@media only screen and (max-width: 480px) {
+  header.top h1 {
+    font-size: 2.2em;
+  }
+}
+header.top p {
+  font-family: SSSB;
+  text-align: center;
+  font-size: 1.71em;
+  line-height: 154%;
+  margin-top: 21px;
+  margin-bottom: 88px;
+}
+@media only screen and (max-width: 480px) {
+  header.top p {
+    font-size: 1.35em;
+    margin-bottom: 40px;
+  }
+}
+form {
+  display: block;
+  text-align: center;
+}
+form label {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 1.3em;
+}
+form .form-control {
+  width: 100%;
+  max-width: 389px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 52px;
+  font-style: italic;
+  padding: 0 15px;
+  font-size: 1.18em;
+  margin-right: 12px;
+  font-family: SSL;
+}
+@media only screen and (max-width: 480px) {
+  form .form-control {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+}
+form .btn {
+  padding: 10px 10px;
+  max-width: 212px;
+  width: 100%;
+  font-family: SSSB;
+  background: #ff821c;
+  font-size: 1.55em;
+}
+@media only screen and (max-width: 480px) {
+  form .btn {
+    max-width: 100%;
+  }
+}
+article.proposal {
+  padding-top: 74px;
+  padding-bottom: 73px;
+}
+@media only screen and (max-width: 480px) {
+  article.proposal {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+article.proposal h3 {
+  text-align: center;
+  color: #000;
+  font-family: SSSB;
+  font-size: 2.15em;
+  margin-bottom: 39px;
+}
+article.proposal ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+  max-width: 540px;
+}
+@media only screen and (max-width: 480px) {
+  article.proposal ul {
+    padding-left: 45px;
+  }
+}
+article.proposal ul li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 1.24em;
+}
+article.proposal ul li span {
+  display: inline-block;
+  position: absolute;
+  left: -41px;
+  top: 3px;
+}
+article.proposal p {
+  text-align: center;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+article.proposal p a {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 6px;
+}
+article.subscribe {
+  padding-top: 62px;
+  padding-bottom: 54px;
+  background: #2cc985;
+}
+@media only screen and (max-width: 480px) {
+  article.subscribe {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  article.subscribe br {
+    display: none;
+  }
+}
+article.subscribe p,
+article.subscribe label {
+  font-size: 1.56em;
+  margin-bottom: 20px;
+  font-family: SSSB;
+  text-align: center;
+  color: #fff;
+}
+article.testimonials {
+  padding-top: 77px;
+  padding-bottom: 56px;
+}
+@media only screen and (max-width: 480px) {
+  article.testimonials {
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+  article.testimonials br {
+    display: none;
+  }
+}
+article.testimonials h3 {
+  color: #000;
+  font-family: SSSB;
+  font-size: 2.15em;
+  margin-bottom: 85px;
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  article.testimonials h3 {
+    margin-bottom: 35px;
+  }
+}
+article.testimonials .row {
+  max-width: 652px;
+  margin: auto;
+}
+article.testimonials .row .col-sm-6:last-child {
+  padding-left: 32px;
+}
+article.testimonials .row .col-sm-6:last-child cite {
+  padding-right: 0 !important;
+}
+@media only screen and (max-width: 480px) {
+  article.testimonials .row .col-sm-6 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+article.testimonials cite {
+  padding-right: 26px;
+  display: block;
+}
+@media only screen and (max-width: 480px) {
+  article.testimonials cite {
+    padding: 0 !important;
+  }
+}
+article.testimonials cite,
+article.testimonials p.name {
+  color: #666;
+  line-height: 174%;
+  font-size: 1.1em;
+  font-family: SSL;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+article.testimonials p.name {
+  margin: 0;
+  margin-bottom: 51px;
+  line-height: 112%;
+  position: relative;
+  padding-left: 65px;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 480px) {
+  article.testimonials p.name {
+    margin-bottom: 65px;
+  }
+}
+article.testimonials p.name b {
+  font-family: SSSB;
+}
+article.testimonials p.name img {
+  position: absolute;
+  top: -9px;
+  left: 0;
+}
+@media only screen and (max-width: 480px) {
+  article.testimonials p.name img {
+    top: -15px;
+  }
+}
